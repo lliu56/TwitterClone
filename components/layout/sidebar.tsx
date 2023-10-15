@@ -23,6 +23,7 @@ export const Sidebar = () => {
       href: "/notifications", // the directory
       icon: BsBellFill,
       auth: true,
+      alert: currentUser?.hasNotificaion,
     },
     {
       label: "Profile",
@@ -44,6 +45,7 @@ export const Sidebar = () => {
               label={item.label}
               icon={item.icon}
               auth={item.auth}
+              alert={item.alert}
             />
           ))}
           {/* 
